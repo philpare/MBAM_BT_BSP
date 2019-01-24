@@ -1,0 +1,9 @@
+Instructions for using the enclosed files:
+
+The data for the manifold plot was created with varied parameter values (\theta_2 and r_2) using the bode function ( [MAG,PHASE] = bode(SYS,W) ) with the three sample frequencies (W) in order to save time.
+
+The exact values of \theta_2 and r_2 are stored in the 'theta2s' and 'r2s' variables, respectively.
+
+The magnitude plot (Fig. 1 (a) in the TAC Technical Note) was created using the bode function with the varied parameters. 
+The bode function for the whole plot took quite a lot of time, for this reason we did not include the code but should be fairly easy to reproduce.
+One would just iterate through the parameter values, then for create a system 'SYS' for each set of parameters and call bode(SYS), with a hold on the plot.
